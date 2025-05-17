@@ -1,0 +1,69 @@
+<!-- Brendan O'Connor 4/1/25 -->
+<!Doctype html>
+<html lang="en">
+	<head>
+		<title>NightRuder: A Night Interrupted</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<div id="wrapper">
+		<body>
+			<header id="headerid">
+				<h1 id="nightruder">Enter NightRuder...</h1>
+				<img src="pirates.jpeg" alt="image of pirates fighting" height="500" width="500">
+			</header>
+			<nav></nav>
+			<main>
+				<div class="article">
+					<h2>Play alone or with friends!</h2>
+					<p>NightRuder allows for an indepth single player mode where the user is taken on an adventure through the darkest of nights.... if you dare! If playing alone isn't your style then hop online and join up with friends to take down enemeies and face down the night terrors that lurk around every corner.</p>
+				</div>
+				<div class="article">
+					<h2>Unique character classes</h2>
+					<p>In NightRuder the player has the opportunity to select one of 10 different unique player classes each with their own style of gameplay and interaction. Each class comes equipped with their own weapons, skills and abilities, and hitpoints.</p>
+				</div>
+				<div class="article">
+					<h2>World class development</h2>
+					<p>NightRuder comes from the same creative talent that made Elden Ring (Yes THAT Elden Ring).... okay maybe it isn't the same people but they are definitely friends with those people. The gameplay is so intense it could only have come from the unhinged mind of Nebraska's game bad boy, Ron Ronaldson. Need we say more?</p>
+				</div>
+				<div class="article">
+					<h2>A world unto itself</h2>
+					<p>In NightRuder you will experience a game play that few others have been able to create. It entails an explorable environment as big as Yellowstone National Park. If that isn't enough the player is allowed to destroy and create map content while playing the game. Build on the existing universe by playing in the "expansion" mode that includes the ability to create entire new maps for play.</p>
+				</div>
+			</main>
+			<footer id="footerid">
+				All &copy; copyright is owned by ToSoft Inc and it's parent organization. You must obtain explicit written consent to use any of this game's materials.
+			</footer>
+			<script>
+				"use strict";
+				let greeting = "Welcome to the night!"; // step 1
+				alert(greeting); // step 2
+				greeting = "The mystery you never thought you'd encounter"; // step 3
+				console.log(greeting); // step 4
+				let readyToLaunch = false; // step 5
+				let preorders = 4538; // step 6
+				let promoCopies = 22; // step 6
+				const retailPrice = 79; // step 6
+				console.log(`Nightruder has ${preorders} preorders, looking at $${retailPrice * (preorders - promoCopies)} in sales.`); // step 7
+			</script>
+			<script> // Project 3 script
+				"use strict";
+				console.log(document.body); // shows the element DOM tree.
+				console.dir(document.body); // shows the element as a DOM object, good to explore these properties.
+				let userName = prompt("Please enter your name"); // question 2
+				let h1 = document.querySelector("h1"); // question 3
+				h1.textContent = `${userName}, Welcome to Nightruder!` // question 3
+				let article2 = document.querySelectorAll(".article")[1]; // question 4
+				let h3 = document.createElement("h3"); // question 4
+				h3.classList.add("preorder-totals"); // question 4
+				h3.textContent = `There are currently ${preorders} presales sold!` // question 4
+				article2.append(h3); // question 4
+				let header = document.querySelector("#headerid"); // question 5/6
+				header.style.color = "white"; // question 5/6
+				header.classList.add("newstyle"); // question 5/6
+			</script>
+
+		</body>
+	</div> <!-- wrapper div -->
+</html>

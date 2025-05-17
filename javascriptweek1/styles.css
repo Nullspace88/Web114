@@ -1,0 +1,25 @@
+
+body {
+	background-color: black;
+	color: red;
+}
+
+#nightruder {
+	font-size: 3em;
+	padding-bottom: 0px;
+}
+
+#footerid {
+	font-size: 0.5em;
+	font-style: italic;
+	color: white;
+}
+
+.article {
+	font-family: Georgia, sans-serif;
+	font-size: 0.8em;
+}
+
+.article p {
+	text-indent: 3em;
+}

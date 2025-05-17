@@ -1,0 +1,88 @@
+<!-- Brendan O'Connor 5/7/2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<div id="wrapper">
+		<body>
+			<div>
+				<h1>Welcome to the JS game</h1>
+				<nav>
+					Navigation Links
+					<ul>
+						<li><a href="#press">Press button</a></li>
+						<li><a href="#reservedword">Reserved Word Checker</a></li>
+						<li><a href="#calculator">Calculator</a></li>
+					</ul>
+				</nav>
+			</div> <!-- end formatting div -->
+			<div>
+				<img src="tron.png" alt="a picture of a tron motorcycle performing a wheelie">
+				<caption>Click to toggle thumbnail size (first toggle adds a point, subsequent toggle loses a point)</caption><br>
+				<img src="airplane.png" alt="a picture of an airplane in a color book format with a sun in the background">
+				<caption>Click to toggle thumbnail size (first toggle adds a point, subsequent toggle loses a point)</caption><br>
+			</div> <!-- end formatting div -->
+			<div>
+				Please select which image you would like to see (1 point each click):
+				<input type="radio" id="tron" name="imagechoice" value="tron">
+				<label for="tron">tron</label>
+				<input type="radio" id="funny" name="imagechoice" value="funny">
+				<label for="funny">funny</label><br>
+			</div> <!-- end formatting div -->
+			<div>
+				<h4 id="press">Press button</h4>
+				Press this button and we will count the number of times you pressed it! (1 point for each press)<br>
+				<button id="pressacc">Press Me!</button><br>
+				You pressed the button <span id="answer">0</span> times.<br>
+			</div> <!-- end formatting div -->
+			<div>
+				<h4 id="reservedword">JS reserved word</h4>
+				Check to see if a word is a reserved JavaScript word (green confirms it is, red means it isn't a reserved word) (1 point for each check): <input type="text" id="wordQuery">
+				<button id="check">Check</button><br>
+			</div> <!-- end formatting div -->
+			<div>
+				<h4 id="calculator">Calculator</h4>
+				<span class="name"></span>, Select two numbers and an operator to perform an operation on and we will provide the result. (1 point for each calculationg)<br>
+				First number: <input id="num1"></input><br>
+				Second number: <input id="num2"></input>
+				<select id="operator">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="/">/</option>
+					<option value="*">*</option>
+					<option value="%">%</option>
+					<option value="**">**</option>
+					<option value="<"><</option>
+					<option value=">">></option>
+					<option value=">=">>=</option>
+					<option value="<="><=</option>
+					<option value="==">==</option>
+					<option value="===">===</option>
+					<option value="!=">!=</option>
+					<option value="!==">!==</option>
+				</select>
+				<button id="calculate">Calculate</button>
+				<br>
+				The answer is: <span id="calculation"></span>
+			</div> <!-- end formatting div -->
+			<div>
+				<h4>Your score is currently <span id="score"></span></h4> <button id="scorecalc">Update Score</button>
+			</div> <!-- end formatting div -->
+			<div>
+				<h2 id="secret"> Secret Zone </h2>
+				<p>
+				Here is where we will talk about all the mobile and tablet users behind their backs. How laughable are those tiny computer screens they use. Our larger screens allow us to be mountains more productive. Think about it, when was the last time you did any real work on a mobile device. It is us the large screen laptops and desktops that are producing all of the work for the mobile and tablet users to consume. We must unite while there is still time to save us from the mobile community taking up all of our internet resources. Don't worry it shouldn't be too hard of an effort, warding them off. They are probably to busy playing candy crush.
+				</p>
+			</div> <!-- end formatting div -->
+		</body>
+	</div> <!-- end wrapper div -->
+	<footer>
+	</footer>
+	<script src="script.js">
+	</script>
+</html>
+

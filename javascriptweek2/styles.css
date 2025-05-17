@@ -1,0 +1,49 @@
+/* Brendan O'Connor 3/8/25 */
+body {
+	background-color: black;
+	color: red;
+}
+
+#wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+	border: 1px solid red;
+	padding-left: 5%;
+}
+
+#nightruder {
+	font-size: 3em;
+	padding-bottom: 0px;
+}
+
+#footerid {
+	font-size: 0.5em;
+	font-style: italic;
+	color: white;
+}
+
+.article {
+	font-family: Georgia, sans-serif;
+	font-size: 0.8em;
+	color: darkcyan;
+	letter-spacing: 3px;
+	line-height: 1.5;
+}
+
+.article p {
+	text-indent: 3em;
+}
+
+@media only screen and (max-width: 600px) {
+	.article {
+		font-size: 1.0em;
+	}
+	#nightruder {
+		font-size: 2em;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+}

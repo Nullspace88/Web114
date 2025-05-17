@@ -1,0 +1,82 @@
+/* Brendan O'Connor 5/7/2025 */
+* {
+	box-sizing: border-box;
+}
+
+body { 
+		background-color: black;
+		color: white;
+		line-height: 2;
+
+	}
+a
+	{
+		color:white;
+	}
+ul
+	{
+		list-style: none;
+	}	
+img 
+	{
+		max-width: 100%;
+	}
+p
+	{
+		display: none;
+	}
+
+#wrapper 
+	{
+		width: 100%;
+	}
+#secret
+	{
+		display: none;
+	}
+.confirm 
+	{
+		background-color: green;
+	}
+
+.cancel 
+	{
+		background-color: red;
+	}
+
+@media (min-width: 480px) {
+	nav 
+		{
+			display: none;
+		}
+	#wrapper 
+		{
+			width: 90%;
+		}
+	@supports (display: grid) {
+		#wrapper 
+			{
+				display: grid;
+				grid-template-columns: auto auto;
+			}
+	}
+
+}
+
+@media (min-width: 1080px) {
+	body 
+		{
+			background-color: white;
+			color: black;
+		}
+	p 
+		{
+			color: blue;
+			display: block;
+		}
+	#wrapper 
+		{
+			width: 50%;
+			margin: auto;
+		}
+}
